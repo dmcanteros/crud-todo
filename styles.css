@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEEEEE;
+}
+#logo {
+    font-size: 25px;
+    font-family: 'Anton';
+    color: transparent;
+    -webkit-text-stroke: 0.1px #55C9DF;
+}
+.input::placeholder {
+    text-align: center;
+}
+#name {
+    letter-spacing: .5px;
+}
+.display-1 {
+    font-weight: 1000;
+    color: #537188;
+    font-size: 7rem;
+    padding-top: 5rem;;
+}
+input[type="text"] {
+    font-weight: 1000;
+    letter-spacing: .5px;
+    text-align: center;
+    border: none;
+}
+.todos {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.todos li {
+    border-top: 1px solid #e5e5e5;
+    padding: .3rem 1rem;
+    cursor: pointer;
+}
+.todos li.completed {
+    text-decoration: line-through;
+    color: #b6b6b6;
+}
+.box {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* responsive design ------------------------ */
+/* nest hub (1024px) ------------------------ */
+@media screen and (max-width: 1025px) {
+    .display-1 {
+        padding-top: 2rem;
+    }
+}
+/* galaxy note 3 / galaxy note II / galaxy S III (360px) -------------------- */
+@media screen and (max-width: 361px) {
+    .display-1 {
+        font-size: 5rem;
+    }
+}
+/* iphone se (375px) ------------------- */
+@media screen and (max-width: 376px) {
+    .display-1 {
+        font-size: 5rem;
+        padding-top: 4rem;
+    }
+}
+/* iphone 4 (320px) -------------------- */
+@media screen and (max-width: 321px) {
+    .display-1 {
+        font-size: 4rem;
+        padding-top: 3rem;
+    }
+    p {
+        font-size: 12px;
+    }
+    input[type="text"] {
+        font-weight: 600;
+        height: 40px;
+    }
+    .input::placeholder {
+        font-size: 16px;
+    }
+    :root {
+        font-size: 13px;
+    }
+}

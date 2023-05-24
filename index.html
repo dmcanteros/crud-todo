@@ -1,1 +1,30 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daphane | ToDo App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container-md text-center">
+        <h1 class="display-1 container title-name">ToDo.</h1>
+        <p class="m-0 mt-4 fst-italic text-muted">Type your ToDo then press "Enter"</p>
+        <p class="m-0 fst-italic text-muted">Left click to mark as complete</p>
+        <p class="m-0 fst-italic text-muted mb-5">Right click to remove list</p>
+        <form id="form">
+            <div class="box col-8 m-auto mb-1 input-group-lg">
+                <input type="text" id="input" class="form-control input" placeholder="Enter your ToDo" aria-label="Enter your ToDo" autocomplete="off">
+            </div>
+            <ul class="box todos col-8 m-auto text-start" id="todos"></ul>
+        </form>
+    </div>
+    <footer class="container-fluid bg-dark text-center pt-2 fixed-bottom">
+        <p class="text-bg-dark"><strong class="me-2" id="logo">d.c</strong>&nbsp;&nbsp;Created by<strong id="name">&nbsp;Daphane Canteros</strong></p>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
